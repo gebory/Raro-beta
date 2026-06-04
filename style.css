@@ -90,16 +90,16 @@ body {
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.8)
     ),
-    url('Images/hero-bg.jpg.jpg');
+    url('Images/Real.PNG');
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 .hero-section::before {
     content: "";
