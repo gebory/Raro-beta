@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RARO Clone</title>
+    <!-- ربط ملف التصميم الخارجي CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- استيراد خطوط أنيقة تشبه المستخدمة في صورة image.png -->
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- [1] شريط التنقل العلوي (Navbar) -->
+    <header class="navbar">
+        <div class="logo">R A R O</div>
+        <nav class="nav-links">
+            <a href="#" class="active">HOME</a>
+            <a href="#">COLLECTION</a>
+            <a href="#">ABOUT</a>
+            <a href="#">WAITLIST</a>
+        </nav>
+        <button class="btn-waitlist">JOIN WAITLIST</button>
+    </header>
+
+    <!-- [2] الواجهة الرئيسية الكبيرة (Hero Section) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>RARO</h1>
+            <p class="tagline">CRAFTED IN LIMITED NUMBERS.<br>DESIGNED TO REMAIN RARE.</p>
+            <button class="btn-enter">ENTER COLLECTION</button>
+        </div>
+        
+        <!-- النصوص الجانبية الصغير في أسفل الصورة الرئيسية -->
+        <div class="hero-footer-text">
+            <span>NOT MADE FOR EVERYONE</span>
+            <span>DROP 01 — ATHAR</span>
+        </div>
+    </section>
+
+    <!-- [3] شبكة عرض المنتجات (Products Section) -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2>DROP 01</h2>
+            <span class="stock-info">6 PIECES. 40 EACH.</span>
+        </div>
+
+        <div class="products-grid">
+            <!-- الكرت الأول (منتج متاح) -->
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- استبدل image1.jpg بصورة التيشيرت الأول لديك -->
+                    <img src="images/image1.jpg" alt="Athar">
+                </div>
+                <div class="product-info">
+                    <h3>01. ATHAR</h3>
+                    <p class="status">40 PIECES ONLY</p>
+                    <button class="btn-view">VIEW PIECE</button>
+                </div>
+            </div>
+
+            <!-- الكرت الثاني (قريباً) -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image2.jpg" alt="Dijla">
+                </div>
+                <div class="product-info">
+                    <h3>02. DIJLA</h3>
+                    <p class="coming-soon">COMING SOON</p>
+                </div>
+            </div>
+
+            <!-- الكرت الثالث (قريباً) -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image3.jpg" alt="Roots">
+                </div>
+                <div class="product-info">
+                    <h3>03. ROOTS</h3>
+                    <p class="coming-soon">COMING SOON</p>
+                </div>
+            </div>
+            
+            <!-- ملاحظة: يمكنك تكرار الكروت لتصل إلى 6 كروت كما في الصورة -->
+        </div>
+    </section>
+
+    <!-- [4] تذييل الصفحة (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-brand">
+            <p><strong>RARO®</strong></p>
+            <p>BAGHDAD, IRAQ</p>
+            <p>EST. 2025</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">EMAIL</a>
+            <a href="#">TERMS</a>
+            <a href="#">PRIVACY</a>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 RARO. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
