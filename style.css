@@ -6,7 +6,10 @@
     font-family: 'Marcellus', serif; /* الخط الفخم الفراغي */
     letter-spacing: 2px; /* تباعد الحروف مثل الموقع الأصلي */
 }
-
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 body {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('Images/hero-bg.jpg.jpg') center/cover no-repeat;
 
