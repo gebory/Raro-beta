@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/hero-bg.jpg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('Images/hero-bg.jpg.jpg') center/cover no-repeat;
 
 /* شريط التنقل العلوي */
 .navbar {
