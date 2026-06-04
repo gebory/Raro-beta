@@ -23,7 +23,7 @@ body {
     border-bottom: 1px solid #151515;
 }
 
-.logo {
+.logo {white-space: nowrap;
     font-size: 28px;
     font-weight: 400;
     letter-spacing: 10px;
@@ -240,3 +240,22 @@ body {
     color: #9a9a9a;
     line-height: 2;
 }
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:25px;
+    padding:30px;
+}
+
+.logo{
+    font-size:40px;
+    letter-spacing:8px;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
