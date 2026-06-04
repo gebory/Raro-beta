@@ -10,6 +10,30 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
+@media (max-width:768px){
+
+.navbar{
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.nav-links a{
+    margin:0;
+}
+
+.btn-waitlist{
+    width:220px;
+}
+
+}
 body {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('Images/hero-bg.jpg.jpg') center/cover no-repeat;
 
@@ -95,13 +119,30 @@ z-index:2;
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 140px;
-    font-weight: 400;
-    letter-spacing: 14px;
-    margin-bottom: 20px;
+.hero-content h1{
+    font-size:clamp(60px,15vw,140px);
+}
+@media (max-width:768px){
+
+.hero-section{
+    height:90vh;
+    background-position:center center;
 }
 
+.hero-content{
+    padding:20px;
+}
+
+.hero-content .tagline{
+    font-size:12px;
+}
+
+.hero-footer-text{
+    padding:0 20px;
+    font-size:10px;
+}
+
+}
 .hero-content .tagline {
     font-size: 15px;
     color: #b8b8b8;
