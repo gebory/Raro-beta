@@ -1,0 +1,212 @@
+/* تصفيات وإعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus', serif; /* الخط الفخم الفراغي */
+    letter-spacing: 2px; /* تباعد الحروف مثل الموقع الأصلي */
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* شريط التنقل العلوي */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: #000000;
+    border-bottom: 1px solid #151515;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #ffffff;
+}
+
+.btn-waitlist {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-waitlist:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* الواجهة الرئيسية الهيرو */
+.hero-section {
+    position: relative;
+    height: 75vh;
+    /* استبدل المربع الأسود أدناه بصورة تيشيرت الخلفية الكبير المتوفر في image.png */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero-content .tagline {
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.btn-enter {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #555555;
+    padding: 12px 28px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.btn-enter:hover {
+    border-color: #ffffff;
+}
+
+.hero-footer-text {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 11px;
+    color: #666666;
+}
+
+/* قسم شبكة المنتجات */
+.products-section {
+    padding: 60px 50px;
+    background-color: #080808;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #151515;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.products-header h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.stock-info {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* تقسيم المنتجات على شكل أعمدة متجاوبة */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background-color: #0b0b0b;
+    border: 1px solid #121212;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-image {
+    background-color: #111111;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.product-info .status, .product-info .coming-soon {
+    font-size: 11px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.btn-view {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 8px 15px;
+    font-size: 11px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn-view:hover {
+    border-color: #ffffff;
+}
+
+/* تذييل الصفحة */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #000000;
+    border-top: 1px solid #151515;
+    font-size: 11px;
+    color: #444444;
+    line-height: 1.8;
+}
+
+.footer-links a {
+    color: #444444;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
